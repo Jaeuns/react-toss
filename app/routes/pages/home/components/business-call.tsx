@@ -5,7 +5,7 @@ export default function BusinessCall() {
     <section className="h-[306px] py-[33px]">
       <div className="container flex items-center justify-around">
         <div>
-          <h2 className="text-[36px] leading-[1.3] font-[700] text-[#333d4b]">
+          <h2 className="mb-[16px] text-[36px] leading-[1.3] font-[700] text-[#333d4b]">
             비즈니스 고객 제보
           </h2>
           <p
