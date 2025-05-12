@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 
-import FaceBook from '~/components/svg/facebook.svg?react';
+import Facebook from '~/components/svg/facebook.svg?react';
 import Instagram from '~/components/svg/instagram.svg?react';
 import Naver from '~/components/svg/naver.svg?react';
 import TossBlog from '~/components/svg/toss-blog.svg?react';
@@ -25,7 +25,7 @@ const FooterNav = ({ title, data }: FooterNavProps) => {
         {data.map((item, index) => (
           <li
             key={index}
-            className="text-[15px] leading-[30px] font-[400] text-[#6b7684]"
+            className="hover-deco text-[15px] leading-[30px] font-[400] text-[#6b7684]"
           >
             <Link to={item.link}>{item.label}</Link>
           </li>
@@ -39,7 +39,7 @@ const FOOTER_NAV: FooterNavProps[] = [
   {
     title: '서비스',
     data: [
-      { label: '공지사항', link: '#' },
+      { label: '공지사항', link: '/notice' },
       { label: '자주 묻는 질문', link: '#' },
       { label: '공동인증서 관리', link: '#' },
       { label: '계정 일시잠금', link: '#' },
@@ -167,7 +167,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-3">
             <Link to="#" className="hover-icon opacity-70">
-              <FaceBook />
+              <Facebook />
             </Link>
             <Link to="#" className="hover-icon opacity-70">
               <TossBlog />
